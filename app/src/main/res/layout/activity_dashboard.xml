@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- First LinearLayout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+        <!-- Button 1 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewBtnUpload"
+            style="@style/CardViewStyle">
+
+            <Button
+                android:id="@+id/button1"
+                style="@style/CardButton"
+                android:text="Button 1"
+                android:onClick="onButtonClick" />
+        </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+        <!-- Button 2 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
+            style="@style/CardViewStyle">
+
+            <Button
+                android:id="@+id/button2"
+                style="@style/CardButton"
+                android:text="Button 2"
+                android:onClick="onButtonClick" />
+        </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Second LinearLayout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+        <!-- Button 3 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView3"
+            style="@style/CardViewStyle">
+
+            <Button
+                android:id="@+id/button3"
+                style="@style/CardButton"
+                android:text="Button 3"
+                android:onClick="onButtonClick" />
+        </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+        <!-- Button 4 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView4"
+            style="@style/CardViewStyle">
+
+            <Button
+                android:id="@+id/button4"
+                style="@style/CardButton"
+                android:text="Button 4"
+                android:onClick="onButtonClick" />
+        </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+</LinearLayout>
